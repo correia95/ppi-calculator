@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0d11"/>
+  <g transform="translate(800,150)">
+    <rect x="0" y="0" width="320" height="210" rx="10" fill="none" stroke="#67e8f9" stroke-width="6"/>
+    <path d="M110 250h100M160 210v40" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#164e5b">
+      <rect x="18" y="18" width="18" height="18"/><rect x="46" y="18" width="18" height="18"/><rect x="74" y="18" width="18" height="18"/><rect x="102" y="18" width="18" height="18"/>
+      <rect x="18" y="46" width="18" height="18"/><rect x="46" y="46" width="18" height="18"/><rect x="74" y="46" width="18" height="18"/>
+    </g>
+  </g>
+  <text x="80" y="215" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="96" font-weight="800" fill="#e8eaf1" letter-spacing="-2">PPI &amp; DPI</text>
+  <text x="80" y="305" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="96" font-weight="800" fill="#e8eaf1" letter-spacing="-2">Calculator</text>
+  <text x="82" y="372" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" fill="#67e8f9">2560 × 1440 @ 27″ → 108.8 PPI</text>
+  <text x="80" y="440" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="25" fill="#99a0b1">dot pitch · megapixels · aspect · retina distance · print DPI ⇄ size ⇄ px</text>
+  <text x="80" y="482" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="21" fill="#67e8f9">free · no sign-up · works offline</text>
+</svg>

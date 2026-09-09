@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0891b2" />
+
+    <title>PPI &amp; DPI Calculator — screen pixel density and print size</title>
+    <meta
+      name="description"
+      content="Calculate a screen's pixels per inch from its resolution and diagonal, with dot pitch, megapixels, aspect ratio and the distance at which pixels disappear. Plus DPI ⇄ print size ⇄ pixel-count for printing photos. Free, in your browser."
+    />
+    <link rel="canonical" href="https://ppi-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PPI & DPI Calculator" />
+    <meta property="og:description" content="Screen pixels per inch from resolution + diagonal (dot pitch, megapixels, retina distance) and print DPI ⇄ size ⇄ pixel-count conversions." />
+    <meta property="og:url" content="https://ppi-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://ppi-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PPI & DPI Calculator" />
+    <meta name="twitter:description" content="Screen pixel density and print size / DPI calculator. Free, no sign-up, works offline." />
+    <meta name="twitter:image" content="https://ppi-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PPI & DPI Calculator",
+        "url": "https://ppi-calculator.correia95.workers.dev/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Calculates screen pixel density (PPI) from resolution and diagonal — dot pitch, megapixels, aspect ratio, retina viewing distance — and converts between print DPI, print size and pixel dimensions, in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate PPI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Take the square root of (horizontal pixels squared plus vertical pixels squared) to get the diagonal in pixels, then divide by the screen's diagonal in inches."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between PPI and DPI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PPI (pixels per inch) describes a screen's pixel density. DPI (dots per inch) is the same measure for a printer or a printed image. In everyday use the two terms are interchangeable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What DPI should I print a photo at?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 300 DPI for prints you hold in your hand. Divide the image's pixel dimensions by 300 to find the largest size it prints well. Posters viewed from a distance are fine at 150 DPI or lower."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What counts as a Retina display?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A density high enough that at a normal viewing distance the eye cannot resolve individual pixels — roughly 220 PPI for a laptop at 50 cm or 300 or more PPI for a phone at 30 cm."
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      .tt-nav { box-sizing: border-box; width: 100%; margin: 0; background: #f1f1f4; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .tt-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; text-decoration: none; color: #3730a3; font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .tt-nav a:hover { color: #1e1b4b; text-decoration: underline; }
+      .tt-nav svg { width: 14px; height: 14px; flex: none; }
+      @media (prefers-color-scheme: dark) {
+        .tt-nav { background: #15151b; border-bottom-color: rgba(255, 255, 255, 0.12); }
+        .tt-nav a { color: #c7d2fe; }
+        .tt-nav a:hover { color: #e0e7ff; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="tt-nav"><a href="https://tinytools.correia95.workers.dev/" aria-label="TinyTools home — all tools and games"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg><span>TinyTools</span></a></nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        The PPI &amp; DPI Calculator needs JavaScript. It works out screen pixel density and print
+        size.
+      </p>
+    </noscript>
+  </body>
+</html>

@@ -101,3 +101,9 @@ header h1 { font-size: clamp(1.4rem, 4.4vw, 2rem); margin: 0 0 6px; letter-spaci
 @media (max-width: 440px) {
   .grid3 { grid-template-columns: 1fr; }
 }
+
+/* a11y-contrast-fixes (auto, WCAG AA 4.5:1) */
+@media (prefers-color-scheme: light) {
+  .tabs button.on { color: #07809d; }
+  .seg button.on { color: #07809d; }
+}
